@@ -1,5 +1,4 @@
 # pythonfiles
-#----------------------------------------------------------------------
 🐍 Setting Up Python in Visual Studio Code (VS Code)
 📦 Requirements
 Windows / macOS / Linux
