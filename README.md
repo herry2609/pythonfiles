@@ -30,4 +30,7 @@ Python provides various built-in data types to support different kinds of data o
 ### 🈳 None Type
 - `NoneType`: Represents the absence of a value (`None`)
   
-These are the datatypes of python.
+-> These are the datatypes of python.
+
+
+
