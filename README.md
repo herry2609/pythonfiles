@@ -116,4 +116,82 @@ Python provides various built-in data types to support different kinds of data o
 ### 🈳 None Type
 - `NoneType`: Represents the absence of a value (`None`)
   
-#-> These are the datatypes of python.
+-> These are the datatypes of python.
+
+#----------------------------------------------------------------------
+
+# Python Addition with Different Data Types (Without Functions)
+
+This simple Python script demonstrates how to **add or concatenate** different data types using the `+` operator **without using functions** (`def`). It includes examples with:
+- Integers
+- Floats
+- Strings
+- Mixed types (integer + float)
+- String with number (with type conversion)
+
+## 🔢 Integer Addition
+
+a = 10
+b = 20
+int_result = a + b
+print("Integer addition result:", int_result)  # Output: 30
+Explanation: Adds two integer values. The result is also an integer.
+
+🌊 Float Addition
+
+python
+Copy
+Edit
+x = 10.5
+y = 5.5
+float_result = x + y
+print("Float addition result:", float_result)  # Output: 16.0
+Explanation: Adds two floating-point numbers. The result is a float.
+
+🧵 String Concatenation
+
+python
+Copy
+Edit
+str1 = "Hello, "
+str2 = "World!"
+string_result = str1 + str2
+print("String addition result:", string_result)  # Output: Hello, World!
+Explanation: Using + with strings performs concatenation, not numeric addition.
+
+🔀 Integer + Float Addition
+
+python
+Copy
+Edit
+num1 = 7
+num2 = 3.5
+mixed_result = num1 + num2
+print("Integer + Float result:", mixed_result)  # Output: 10.5
+Explanation: When adding an integer and a float, Python automatically converts the integer to a float.
+
+⚠️ String and Number (TypeError Example)
+
+python
+Copy
+Edit
+# print("Result: " + 5)  # ❌ This will raise a TypeError
+Explanation: Python does not allow adding a string and a number directly. You need to convert the number to a string first.
+
+✅ String and Number (Correct Way)
+
+python
+Copy
+Edit
+print("Combined string and number:", "Result: " + str(5))  # Output: Result: 5
+Explanation: Use str() to convert the number to a string before concatenating.
+
+💡 Key Takeaways
+
++ operator works differently based on data types:
+Numbers: Performs arithmetic addition.
+Strings: Performs concatenation.
+Python automatically handles type promotion (e.g., int + float becomes float).
+Avoid mixing incompatible types (e.g., str + int) without conversion.
+
+-> These are the Adding Numeric and Text Types.
