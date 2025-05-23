@@ -202,32 +202,40 @@ Avoid mixing incompatible types (e.g., str + int) without conversion.
 
 Method	Description	Example.
 
-(1) append(item) :- Adds an item to the end of the list :- my_list.append(5)
-(2) insert(index, item)	:- Inserts an item at a specific position :- my_list.insert(2, "hello")
-(3) extend(iterable) :- Adds all elements from another list (or iterable) :- my_list.extend([1, 2, 3])
-(4) + operator :- Concatenates two lists :- new_list = list1 + list2
-(5) *= n :- Repeats the list n times :- my_list *= 3
+| Method                | Description                                       | Example                      |
+| --------------------- | ------------------------------------------------- | ---------------------------- |
+| `append(item)`        | Adds an item to the **end** of the list           | `my_list.append(5)`          |
+| `insert(index, item)` | Inserts an item at a specific position            | `my_list.insert(2, "hello")` |
+| `extend(iterable)`    | Adds all elements from another list (or iterable) | `my_list.extend([1, 2, 3])`  |
+| `+` operator          | Concatenates two lists                            | `new_list = list1 + list2`   |
+| `*= n`                | Repeats the list `n` times                        | `my_list *= 3`               |
+
 
 ❌ Removing Elements from a List.
 
 Method	Description	Example.
 
-(1) remove(item) :- Removes the first occurrence of the item :- my_list.remove("apple")
-(2) pop() :- Removes and returns the last item :- my_list.pop()
-(3) pop(index) :- Removes and returns the item at a specific index :- my_list.pop(2)
-(4) clear() :- Removes all elements from the list :- my_list.clear()
-(5) del :- Deletes item at index or entire list :- del my_list[1] or del my_list
+| Method         | Description                                      | Example                           |
+| -------------- | ------------------------------------------------ | --------------------------------- |
+| `remove(item)` | Removes the **first occurrence** of the item     | `my_list.remove("apple")`         |
+| `pop()`        | Removes and returns the **last item**            | `my_list.pop()`                   |
+| `pop(index)`   | Removes and returns the item at a specific index | `my_list.pop(2)`                  |
+| `clear()`      | Removes **all elements** from the list           | `my_list.clear()`                 |
+| `del`          | Deletes item at index or entire list             | `del my_list[1]` or `del my_list` |
+
 
 🔄 Other Useful List Methods.
 
 Method	Description	Example.
 
-(1) index(item) :- Returns the index of the first match	:- my_list.index("banana")
-(2) count(item)	:- Returns how many times the item appears	:- my_list.count(2)
-(3) sort()	:- Sorts the list in-place	:- my_list.sort()
-(4) sorted(list) :- Returns a new sorted list :- sorted(my_list)
-(5) reverse() :- Reverses the list in-place	:- my_list.reverse()
-(6) copy()	:- Returns a shallow copy of the list :- copy_list = my_list.copy()
+| Method         | Description                             | Example                      |
+| -------------- | --------------------------------------- | ---------------------------- |
+| `index(item)`  | Returns the index of the first match    | `my_list.index("banana")`    |
+| `count(item)`  | Returns how many times the item appears | `my_list.count(2)`           |
+| `sort()`       | Sorts the list **in-place**             | `my_list.sort()`             |
+| `sorted(list)` | Returns a **new sorted list**           | `sorted(my_list)`            |
+| `reverse()`    | Reverses the list **in-place**          | `my_list.reverse()`          |
+| `copy()`       | Returns a shallow copy of the list      | `copy_list = my_list.copy()` |
 
 -> These are the methods of List.
 
@@ -237,8 +245,10 @@ Method	Description	Example.
 
 Method	Description	Example.
 
-(1) add(x) :- Adds a single item :- my_set.add(4)
-(2) update(iterable) :- Adds multiple items (from list, tuple, etc.) :- my_set.update([5, 6, 7])
+| Method             | Description                                  | Example                    |
+| ------------------ | -------------------------------------------- | -------------------------- |
+| `add(x)`           | Adds a single item                           | `my_set.add(4)`            |
+| `update(iterable)` | Adds multiple items (from list, tuple, etc.) | `my_set.update([5, 6, 7])` |
 
 🔁 update() can accept any iterable: list, set, tuple, string, etc.
 
@@ -246,36 +256,48 @@ Method	Description	Example.
 
 Method	Description	Example.
 
-(1) remove(x) :- Removes item x. Raises KeyError if not found. :- my_set.remove(2)
-(2) discard(x) :- Removes item x. No error if not found. :- my_set.discard(10)
-(3) pop() :- Removes and returns any random item :- item = my_set.pop()
-(4) clear()	:- Empties the set	:- my_set.clear()
-(5) del	:- Deletes the set entirely	:- del my_set
+| Method       | Description                                       | Example               |
+| ------------ | ------------------------------------------------- | --------------------- |
+| `remove(x)`  | Removes item `x`. Raises `KeyError` if not found. | `my_set.remove(2)`    |
+| `discard(x)` | Removes item `x`. **No error** if not found.      | `my_set.discard(10)`  |
+| `pop()`      | Removes and returns **any random item**           | `item = my_set.pop()` |
+| `clear()`    | Empties the set                                   | `my_set.clear()`      |
+| `del`        | Deletes the set entirely                          | `del my_set`          |
+
 
 ♻️ Set Operations.
 
 Operation	Syntax	Description.
 
-(1) Union :- a.union(b) or a|b
-(2) Intersection :- a.intersection(b) or a & b	Common elements
-(3) Difference :- a.difference(b) or a - b	Items in a not in b
-(4) Symmetric Difference :- a.symmetric_difference(b) or a ^ b	Items in a or b but not both.
+| Operation            | Syntax                                 | Description                      |                   
+| -------------------- | -------------------------------------- | -------------------------------- |
+| Union                | `a.union(b)` or \`a                    | b\`                              | 
+| Intersection         | `a.intersection(b)` or `a & b`         | Common elements                  |                   
+| Difference           | `a.difference(b)` or `a - b`           | Items in `a` not in `b`          |                  
+| Symmetric Difference | `a.symmetric_difference(b)` or `a ^ b` | Items in `a` or `b` but not both |
+
 
 ✅ Set Comparison Methods.
 
 Method	Description	Example.
 
-(1) issubset() :- Check if all elements of one set are in another :- a.issubset(b)
-(2) issuperset() :- Check if a set contains all elements of another	:- a.issuperset(b)
-(3) isdisjoint() :- Check if two sets have no common elements :- a.isdisjoint(b)
+| Method         | Description                                     | Example           |
+| -------------- | ----------------------------------------------- | ----------------- |
+| `issubset()`   | Check if all elements of one set are in another | `a.issubset(b)`   |
+| `issuperset()` | Check if a set contains all elements of another | `a.issuperset(b)` |
+| `isdisjoint()` | Check if two sets have no common elements       | `a.isdisjoint(b)` |
+
 
 🔍 Other Useful Set Methods.
 
 Method	Description	Example.
 
-(1) copy()	:- Returns a shallow copy of the set :- new_set = my_set.copy()
-(2) len()	:- Returns number of elements :- len(my_set)
-(3) in/not in :- Checks membership	:- 3 in my_set
+| Method          | Description                       | Example                   |
+| --------------- | --------------------------------- | ------------------------- |
+| `copy()`        | Returns a shallow copy of the set | `new_set = my_set.copy()` |
+| `len()`         | Returns number of elements        | `len(my_set)`             |
+| `in` / `not in` | Checks membership                 | `3 in my_set`             |
+
 
 🧠 Key Points
 
@@ -284,3 +306,26 @@ Method	Description	Example.
 (3) Use set() constructor to create empty sets, not {}.
 
 -> These are the methods and operation of set.
+
+#----------------------------------------------------------------------
+
+🧠 Important Note:
+
+✅ Tuples are immutable → You cannot add, remove, or change their elements directly.
+But you can convert to a list, modify, and convert back to a tuple.
+
+🛠️ Useful Tuple Methods :- 
+
+| Method     | Description                               | Example      |
+| ---------- | ----------------------------------------- | ------------ |
+| `count(x)` | Returns the number of times `x` appears   | `t.count(2)` |
+| `index(x)` | Returns the index of the first occurrence | `t.index(3)` |
+
+📌 Summary
+
+| Action         | How to Do It                          |
+| -------------- | ------------------------------------- |
+| Add element    | `t = t + (element,)`                  |
+| Remove element | Convert to list, remove, convert back |
+| Count items    | `t.count(x)`                          |
+| Find index     | `t.index(x)`                          |
