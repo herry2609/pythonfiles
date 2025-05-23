@@ -329,3 +329,41 @@ But you can convert to a list, modify, and convert back to a tuple.
 | Remove element | Convert to list, remove, convert back |
 | Count items    | `t.count(x)`                          |
 | Find index     | `t.index(x)`                          |
+
+-> These are the methods and operation of Tuple.
+
+#----------------------------------------------------------------------
+
+🧠 What is a Dictionary?
+
+A dict in Python is a collection of key-value pairs. It is mutable, unordered (in older versions), and indexed by keys.
+
+🛠️ Common Dictionary Methods :- 
+
+| Method               | Description                                  | Example               |
+| -------------------- | -------------------------------------------- | --------------------- |
+| `dict.get(key)`      | Returns value of key, or `None` if not found | `d.get("name")`       |
+| `dict.keys()`        | Returns a view of all keys                   | `d.keys()`            |
+| `dict.values()`      | Returns a view of all values                 | `d.values()`          |
+| `dict.items()`       | Returns key-value pairs                      | `d.items()`           |
+| `dict.update({...})` | Adds/updates key-value pairs                 | `d.update({"a": 1})`  |
+| `dict.copy()`        | Returns a shallow copy                       | `new_dict = d.copy()` |
+| `dict.pop(key)`      | Removes specified key and returns its value  | `d.pop("age")`        |
+| `dict.popitem()`     | Removes and returns the last key-value pair  | `d.popitem()`         |
+| `dict.clear()`       | Removes all items                            | `d.clear()`           |
+
+📌 Summary Table :- 
+
+| Task            | Method or Syntax                       |
+| --------------- | -------------------------------------- |
+| Add item        | `d["key"] = value` or `update()`       |
+| Remove item     | `pop()`, `popitem()`, `del`, `clear()` |
+| Access value    | `d["key"]` or `get("key")`             |
+| Get keys        | `d.keys()`                             |
+| Get values      | `d.values()`                           |
+| Get items       | `d.items()`                            |
+| Copy dictionary | `d.copy()`                             |
+
+-> These are the methods and operation of Dictionary.
+
+#----------------------------------------------------------------------
