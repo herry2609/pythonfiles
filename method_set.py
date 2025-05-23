@@ -57,3 +57,43 @@ print("B is superset of A:", B.issuperset(A))  # True
 # Returns True if they have nothing in common
 print("A and C are disjoint:", A.isdisjoint(C))  # True
 print("A and B are disjoint:", A.isdisjoint(B))  # False (they share 1 and 2)
+
+# ------------------------------------
+
+# Creating a normal set
+normal_set = {1, 2, 3, 4}
+print("Normal set:", normal_set)
+
+# Creating a frozenset from a list
+frozen = frozenset([3, 4, 5, 6])
+print("Frozenset:", frozen)
+
+# -----------------------------
+# ❌ Modifying frozen set will raise an error
+# frozen.add(7)       # ❌ AttributeError
+# frozen.remove(3)    # ❌ AttributeError
+
+# ✅ You can still perform these operations:
+
+# Union: elements from both sets (no duplicates)
+print("Union:", normal_set.union(frozen))  # {1, 2, 3, 4, 5, 6}
+
+# Intersection: common elements
+print("Intersection:", normal_set.intersection(frozen))  # {3, 4}
+
+# Difference: elements in normal_set but not in frozen
+print("Difference:", normal_set.difference(frozen))  # {1, 2}
+
+# Symmetric difference: elements in either set but not both
+print("Symmetric Difference:", normal_set.symmetric_difference(frozen))  # {1, 2, 5, 6}
+
+# Membership test
+print("Is 3 in frozen set?", 3 in frozen)  # True
+
+# Length of frozenset
+print("Length of frozenset:", len(frozen))  # 4
+
+# Iterate through frozenset
+print("Elements in frozenset:")
+for item in frozen:
+    print(item)
