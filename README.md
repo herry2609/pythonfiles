@@ -139,9 +139,6 @@ Explanation: Adds two integer values. The result is also an integer.
 
 🌊 Float Addition
 
-python
-Copy
-Edit
 x = 10.5
 y = 5.5
 float_result = x + y
@@ -150,9 +147,6 @@ Explanation: Adds two floating-point numbers. The result is a float.
 
 🧵 String Concatenation
 
-python
-Copy
-Edit
 str1 = "Hello, "
 str2 = "World!"
 string_result = str1 + str2
@@ -161,9 +155,6 @@ Explanation: Using + with strings performs concatenation, not numeric addition.
 
 🔀 Integer + Float Addition
 
-python
-Copy
-Edit
 num1 = 7
 num2 = 3.5
 mixed_result = num1 + num2
@@ -172,17 +163,11 @@ Explanation: When adding an integer and a float, Python automatically converts t
 
 ⚠️ String and Number (TypeError Example)
 
-python
-Copy
-Edit
 # print("Result: " + 5)  # ❌ This will raise a TypeError
 Explanation: Python does not allow adding a string and a number directly. You need to convert the number to a string first.
 
 ✅ String and Number (Correct Way)
 
-python
-Copy
-Edit
 print("Combined string and number:", "Result: " + str(5))  # Output: Result: 5
 Explanation: Use str() to convert the number to a string before concatenating.
 
