@@ -1,10 +1,10 @@
 # pythonfiles
-🐍 Setting Up Python in Visual Studio Code (VS Code)
+# 🐍 Setting Up Python in Visual Studio Code (VS Code)
 📦 Requirements
 Windows / macOS / Linux
 Internet connection
 #----------------------------------------------------------------------
-🔽 Step 1: Download and Install VS Code
+# 🔽 Step 1: Download and Install VS Code
 Go to the official website: https://code.visualstudio.com
 
 Click on Download for your OS (Windows, macOS, or Linux).
@@ -14,7 +14,7 @@ Run the installer and follow the setup instructions.
 During installation, make sure to check the box:
 ✅ "Add to PATH (recommended)"
 #----------------------------------------------------------------------
-🔽 Step 2: Install Python
+# 🔽 Step 2: Install Python
 Download Python from https://www.python.org/downloads/
 
 Run the installer.
@@ -24,7 +24,7 @@ IMPORTANT: Check the box:
 
 Click Install Now.
 #----------------------------------------------------------------------
-🔌 Step 3: Install Python Extension in VS Code
+# 🔌 Step 3: Install Python Extension in VS Code
 Open VS Code.
 
 Go to the Extensions tab (or press Ctrl+Shift+X).
@@ -33,16 +33,14 @@ Search for Python and install the one by Microsoft.
 
 (Optional but useful) Install Code Runner extension to run Python files easily.
 #----------------------------------------------------------------------
-📝 Step 4: Create and Run Python File
+# 📝 Step 4: Create and Run Python File
 Open any folder in VS Code:
 File → Open Folder → Select folder or create new
 
 Click New File → name it hello.py
 
 Write your first Python code:
-python
-Copy
-Edit
+
 print("Hello, world!")
 #----------------------------------------------------------------------
 Run the code:
@@ -53,12 +51,9 @@ Method 2: Press Ctrl + Alt + N (if you installed Code Runner)
 
 Method 3: Click the green ▶️ play button in the top right corner
 #----------------------------------------------------------------------
-🧪 Step 5: Check if Python is Working (Optional)
+# 🧪 Step 5: Check if Python is Working (Optional)
 Open Terminal in VS Code (Ctrl+~) and type:
 
-bash
-Copy
-Edit
 python --version
 It should show the installed Python version like:
 nginx
@@ -68,7 +63,7 @@ Python 3.12.1
 
 #----------------------------------------------------------------------
 
-📚 Helpful Tips
+# 📚 Helpful Tips
 
 Save your file before running (Ctrl+S)
 
@@ -78,7 +73,7 @@ Use input() to get user input
 
 #----------------------------------------------------------------------
 
-🛠️ Troubleshooting
+# 🛠️ Troubleshooting
 
 ❌ python not recognized: Make sure Python is added to PATH.
 
@@ -137,7 +132,7 @@ int_result = a + b
 print("Integer addition result:", int_result)  # Output: 30
 Explanation: Adds two integer values. The result is also an integer.
 
-🌊 Float Addition
+# 🌊 Float Addition
 
 x = 10.5
 y = 5.5
@@ -145,7 +140,7 @@ float_result = x + y
 print("Float addition result:", float_result)  # Output: 16.0
 Explanation: Adds two floating-point numbers. The result is a float.
 
-🧵 String Concatenation
+# 🧵 String Concatenation
 
 str1 = "Hello, "
 str2 = "World!"
@@ -153,7 +148,7 @@ string_result = str1 + str2
 print("String addition result:", string_result)  # Output: Hello, World!
 Explanation: Using + with strings performs concatenation, not numeric addition.
 
-🔀 Integer + Float Addition
+# 🔀 Integer + Float Addition
 
 num1 = 7
 num2 = 3.5
@@ -161,17 +156,17 @@ mixed_result = num1 + num2
 print("Integer + Float result:", mixed_result)  # Output: 10.5
 Explanation: When adding an integer and a float, Python automatically converts the integer to a float.
 
-⚠️ String and Number (TypeError Example)
+# ⚠️ String and Number (TypeError Example)
 
 # print("Result: " + 5)  # ❌ This will raise a TypeError
 Explanation: Python does not allow adding a string and a number directly. You need to convert the number to a string first.
 
-✅ String and Number (Correct Way)
+# ✅ String and Number (Correct Way)
 
 print("Combined string and number:", "Result: " + str(5))  # Output: Result: 5
 Explanation: Use str() to convert the number to a string before concatenating.
 
-💡 Key Takeaways
+# 💡 Key Takeaways
 
 + operator works differently based on data types:
 Numbers: Performs arithmetic addition.
@@ -183,7 +178,7 @@ Avoid mixing incompatible types (e.g., str + int) without conversion.
 
 #----------------------------------------------------------------------
 
-✅ Adding Elements to a List.
+# ✅ Adding Elements to a List.
 
 Method	Description	Example.
 
@@ -196,7 +191,7 @@ Method	Description	Example.
 | `*= n`                | Repeats the list `n` times                        | `my_list *= 3`               |
 
 
-❌ Removing Elements from a List.
+# ❌ Removing Elements from a List.
 
 Method	Description	Example.
 
@@ -209,7 +204,7 @@ Method	Description	Example.
 | `del`          | Deletes item at index or entire list             | `del my_list[1]` or `del my_list` |
 
 
-🔄 Other Useful List Methods.
+# 🔄 Other Useful List Methods.
 
 Method	Description	Example.
 
@@ -226,7 +221,7 @@ Method	Description	Example.
 
 #----------------------------------------------------------------------
 
-➕ Adding Elements to a Set.
+# ➕ Adding Elements to a Set.
 
 Method	Description	Example.
 
@@ -237,7 +232,7 @@ Method	Description	Example.
 
 🔁 update() can accept any iterable: list, set, tuple, string, etc.
 
-❌ Removing Elements from a Set.
+# ❌ Removing Elements from a Set.
 
 Method	Description	Example.
 
@@ -250,7 +245,7 @@ Method	Description	Example.
 | `del`        | Deletes the set entirely                          | `del my_set`          |
 
 
-♻️ Set Operations.
+# ♻️ Set Operations.
 
 Operation	Syntax	Description.
 
@@ -262,7 +257,7 @@ Operation	Syntax	Description.
 | Symmetric Difference | `a.symmetric_difference(b)` or `a ^ b` | Items in `a` or `b` but not both |
 
 
-✅ Set Comparison Methods.
+# ✅ Set Comparison Methods.
 
 Method	Description	Example.
 
@@ -273,7 +268,7 @@ Method	Description	Example.
 | `isdisjoint()` | Check if two sets have no common elements       | `a.isdisjoint(b)` |
 
 
-🔍 Other Useful Set Methods.
+# 🔍 Other Useful Set Methods.
 
 Method	Description	Example.
 
@@ -284,7 +279,7 @@ Method	Description	Example.
 | `in` / `not in` | Checks membership                 | `3 in my_set`             |
 
 
-🧠 Key Points
+# 🧠 Key Points
 
 (1) Sets are unordered, so indexing is not allowed.
 (2) Automatically removes duplicate elements.
@@ -294,19 +289,19 @@ Method	Description	Example.
 
 #----------------------------------------------------------------------
 
-🧠 Important Note:
+# 🧠 Important Note:
 
 ✅ Tuples are immutable → You cannot add, remove, or change their elements directly.
 But you can convert to a list, modify, and convert back to a tuple.
 
-🛠️ Useful Tuple Methods :- 
+# 🛠️ Useful Tuple Methods :- 
 
 | Method     | Description                               | Example      |
 | ---------- | ----------------------------------------- | ------------ |
 | `count(x)` | Returns the number of times `x` appears   | `t.count(2)` |
 | `index(x)` | Returns the index of the first occurrence | `t.index(3)` |
 
-📌 Summary
+# 📌 Summary
 
 | Action         | How to Do It                          |
 | -------------- | ------------------------------------- |
@@ -319,11 +314,11 @@ But you can convert to a list, modify, and convert back to a tuple.
 
 #----------------------------------------------------------------------
 
-🧠 What is a Dictionary?
+# 🧠 What is a Dictionary?
 
 A dict in Python is a collection of key-value pairs. It is mutable, unordered (in older versions), and indexed by keys.
 
-🛠️ Common Dictionary Methods :- 
+# 🛠️ Common Dictionary Methods :- 
 
 | Method               | Description                                  | Example               |
 | -------------------- | -------------------------------------------- | --------------------- |
@@ -337,7 +332,7 @@ A dict in Python is a collection of key-value pairs. It is mutable, unordered (i
 | `dict.popitem()`     | Removes and returns the last key-value pair  | `d.popitem()`         |
 | `dict.clear()`       | Removes all items                            | `d.clear()`           |
 
-📌 Summary Table :- 
+# 📌 Summary Table :- 
 
 | Task            | Method or Syntax                       |
 | --------------- | -------------------------------------- |
